@@ -99,9 +99,9 @@ void draw() {
   image(robot, robotX, robotY);
   
   fill(255,0,0);
-  ellipse(laserX, laserY, laserHeight, laserHeight);
-  rect(laserX, laserY-laserHeight/2, laserWidth, laserHeight);
-  if(laserWidth==laserMaxWidth-laserHeight) ellipse(laserX+laserWidth, laserY, laserHeight, laserHeight);
+  stroke(255,0,0);
+  strokeWeight(laserHeight);
+  line(laserX, laserY, laserX+laserWidth, laserY);
   
 //soldier
   soldierX += soldierSpeed;
